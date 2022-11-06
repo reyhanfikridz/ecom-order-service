@@ -29,8 +29,8 @@ ECOM_ORDER_SERVICE_DB_NAME_FOR_MODEL_TEST=<database name for model crud testing,
 
 ECOM_ORDER_SERVICE_URL=<this service url, example: :8030>
 ECOM_ORDER_SERVICE_FRONTEND_URL=<ecom frontend url, example: http://127.0.0.1:8000>
-ECOM_ORDER_SERVICE_ACCOUNT_SERVICE_URL=<ecom frontend url, example: http://127.0.0.1:8010>
-ECOM_ORDER_SERVICE_PRODUCT_SERVICE_URL=<ecom frontend url, example: http://127.0.0.1:8020>
+ECOM_ORDER_SERVICE_ACCOUNT_SERVICE_URL=<ecom account service url, example: http://127.0.0.1:8010>
+ECOM_ORDER_SERVICE_PRODUCT_SERVICE_URL=<ecom product service url, example: http://127.0.0.1:8020>
 ```
 
 6. create mongodb databases with name same as in .env file
