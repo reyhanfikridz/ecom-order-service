@@ -10,13 +10,13 @@ This is a microservice for ECOM that related to customer orders CRUD.
 1. go (recommended: v1.18.4)
 2. mongodb (recommended: v6.0.1)
 
-### Server requirements:
+### Microservice requirements:
 1. ecom-account-service (must: https://github.com/reyhanfikridz/ecom-account-service/tree/release-1)
 2. ecom-product-service (must: https://github.com/reyhanfikridz/ecom-product-service/tree/release-1)
 
 ### Steps to run the server:
 1. install all requirements
-2. install and run all server requirements
+2. install and run all microservice requirements
 3. clone repository at directory `$GOPATH/src/github.com/`
 4. install required go library with `go mod download` then `go mod vendor` at repository root directory (same level as README.md)
 5. create file .env at repository root directory (same level as README.md) with contents:
@@ -27,6 +27,7 @@ ECOM_ORDER_SERVICE_DB_NAME=<database name, example: ecomorderservicedb>
 ECOM_ORDER_SERVICE_DB_NAME_FOR_API_TEST=<database name for overall api testing, example: ecomorderserviceapitestdb>
 ECOM_ORDER_SERVICE_DB_NAME_FOR_MODEL_TEST=<database name for model crud testing, example: ecomorderservicemodeltestdb>
 
+ECOM_ORDER_SERVICE_URL=<this service url, example: :8030>
 ECOM_ORDER_SERVICE_FRONTEND_URL=<ecom frontend url, example: http://127.0.0.1:8000>
 ECOM_ORDER_SERVICE_ACCOUNT_SERVICE_URL=<ecom frontend url, example: http://127.0.0.1:8010>
 ECOM_ORDER_SERVICE_PRODUCT_SERVICE_URL=<ecom frontend url, example: http://127.0.0.1:8020>

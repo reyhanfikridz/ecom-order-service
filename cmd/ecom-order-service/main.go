@@ -19,7 +19,7 @@ func main() {
 	}
 
 	// serve server
-	log.Fatal(a.Echo.Start(":8030"))
+	log.Fatal(a.Echo.Start(config.ServerURL))
 }
 
 // InitAPI initialize API

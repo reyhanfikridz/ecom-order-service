@@ -15,6 +15,7 @@ var (
 	DBNameForAPITest   string
 	DBNameForModelTest string
 
+	ServerURL         string
 	FrontendURL       string
 	AccountServiceURL string
 	ProductServiceURL string
@@ -36,6 +37,7 @@ func InitConfig() error {
 	DBNameForAPITest = os.Getenv("ECOM_ORDER_SERVICE_DB_NAME_FOR_API_TEST")
 	DBNameForModelTest = os.Getenv("ECOM_ORDER_SERVICE_DB_NAME_FOR_MODEL_TEST")
 
+	ServerURL = os.Getenv("ECOM_ORDER_SERVICE_URL")
 	FrontendURL = os.Getenv("ECOM_ORDER_SERVICE_FRONTEND_URL")
 	AccountServiceURL = os.Getenv("ECOM_ORDER_SERVICE_ACCOUNT_SERVICE_URL")
 	ProductServiceURL = os.Getenv("ECOM_ORDER_SERVICE_PRODUCT_SERVICE_URL")
