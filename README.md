@@ -7,8 +7,8 @@ ECOM is a simple E-Commerce website builded with Go backend microservices and Dj
 This is a microservice for ECOM that related to customer orders CRUD.
 
 ### Requirements:
-1. go (recommended: v1.18.4)
-2. mongodb (recommended: v6.0.1)
+1. go (tested: v1.18.4, v1.19.3)
+2. mongodb (tested: v6.0.1, v6.0.2)
 
 ### Microservice requirements:
 1. ecom-account-service (must: https://github.com/reyhanfikridz/ecom-account-service/tree/release-1)
@@ -18,7 +18,7 @@ This is a microservice for ECOM that related to customer orders CRUD.
 1. install all requirements
 2. install and run all microservice requirements
 3. clone repository with `git clone https://github.com/reyhanfikridz/ecom-order-service` at directory `$GOPATH/src/github.com/reyhanfikridz/`
-4. change branch to release-1 with `git checkout release-1` then `git pull origin release-1`
+4. change branch to release-1 with `git checkout release-1` then `git pull origin release-1` at repository root directory (same level as README.md)
 5. install required go library with `go mod download` then `go mod vendor` at repository root directory (same level as README.md)
 6. create file .env at repository root directory (same level as README.md) with contents:
 
